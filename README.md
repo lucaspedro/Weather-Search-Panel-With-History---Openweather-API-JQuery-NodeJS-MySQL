@@ -1,6 +1,6 @@
 # Weather-Search-Panel-With-History---Openweather-API-JQuery-NodeJS-MySQL
 
-A basic implementation of a meteorological survey panel, with data from the OpenWeathermap API, this datas was captured in JSON through AJAX. Implementation of the server in NodeJS connected to MySQL, implementation of the client in JQuery.
+A basic implementation of a meteorological search panel, with data from the OpenWeathermap API, these datas was captured in JSON through AJAX. Implementation of the server in NodeJS connected to MySQL, implementation of the client in JQuery.
 
 # Configuration
 
@@ -8,7 +8,7 @@ To run this code it is necessary to install the NodeJS library, download here: h
 
 It is also necessary in this project to install the MySQL server, for which I recommend using the Laragon App: https://laragon.org/download/index.html.
 
-The implementation includes module bellow:
+The implementation includes the NodeJS modules bellow:
 ```
 *const express = require('express');
 *const path = require('path');
@@ -40,7 +40,7 @@ $ npm install fs
 
 # Mysql Database
 
-Here at the root of the project is a file containing the table implemented to record the history. With name "BD_mySQL.sql".
+Here, at the root of the project, there is an SQL file that contains a table implemented for record or history. With name "BD_mySQL.sql".
 
 Before uploading the table, it is necessary to create the database with the name "testenode". To do so, simply run the following MySQL commands:
 
@@ -54,7 +54,7 @@ To upload the table, just run in the terminal:
 mysql -u username -p testenode < BD_mySQL.sql
 ```
 
-To change bank settings, such as login, flock name, etc. Just change the following excerpt in the "server.js" file:
+To change the data base settings, such as login, flock name, etc. Just change the following excerpt in the "server.js" file:
 
 ```
 var con = mysql.createConnection({
@@ -73,7 +73,7 @@ To run the app, just start the virtual server in the NodeJS terminal, as shown b
 node server.js
 ``` 
 
-Depois basta acessar o servidor local pelo navegador através da porta configurada: http://localhost:8080/
+After accessing the local server in the browser through the configured port: http://localhost:8080/
 
 
 # Demonstration
